@@ -1,4 +1,4 @@
-import java.util.ArrayList
+import java.util.ArrayList;
 /**
 This is the class for a Vertice. A vertice is just a point in space that contains a value. 
 Two vertices are connected by an edge which contains information about how the two vertices compare to each other
@@ -8,7 +8,7 @@ Two vertices are connected by an edge which contains information about how the t
 
 public class Vertice<E>
 {
-	public ArrayList<Vertice> connections;
+	public ArrayList<Vertice<E>> connections;
 	public ArrayList<Integer> weights;
 	public E value;
 	public int x;
@@ -50,7 +50,7 @@ public class Vertice<E>
 		return connections;
 	}
 	
-	public ArrayList<Vertice<E>> getWeights()
+	public ArrayList<Integer> getWeights()
 	{
 		return weights;
 	}
